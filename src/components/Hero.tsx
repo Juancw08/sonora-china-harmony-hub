@@ -36,11 +36,21 @@ export const Hero = () => {
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button variant="hero" size="lg" className="text-lg px-8 py-3">
+          <Button 
+            variant="hero" 
+            size="lg" 
+            className="text-lg px-8 py-3"
+            onClick={() => window.open('https://wa.me/526621234567?text=Hola, me interesa unirme a la Asociación China en Sonora', '_blank')}
+          >
             <Users className="mr-2 h-5 w-5" />
             Únete a Nosotros
           </Button>
-          <Button variant="golden" size="lg" className="text-lg px-8 py-3">
+          <Button 
+            variant="golden" 
+            size="lg" 
+            className="text-lg px-8 py-3"
+            onClick={() => window.open('https://wa.me/526621234567?text=Hola, me gustaría conocer más sobre los eventos de la asociación', '_blank')}
+          >
             Conoce Nuestros Eventos
           </Button>
         </div>

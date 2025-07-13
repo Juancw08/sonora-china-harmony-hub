@@ -129,6 +129,7 @@ export const Membership = () => {
                     variant={tier.popular ? "hero" : tier.color as any} 
                     className="w-full"
                     size="lg"
+                    onClick={() => window.open(`https://wa.me/526621234567?text=Hola, me interesa el plan ${tier.name} de la Asociación China en Sonora`, '_blank')}
                   >
                     Unirse Ahora
                   </Button>
@@ -162,7 +163,11 @@ export const Membership = () => {
             <p className="text-muted-foreground mb-4">
               ¿Tienes preguntas sobre nuestras membresías?
             </p>
-            <Button variant="outline" size="lg">
+            <Button 
+              variant="outline" 
+              size="lg"
+              onClick={() => window.open('https://wa.me/526621234567?text=Hola, tengo preguntas sobre las membresías de la Asociación China en Sonora', '_blank')}
+            >
               Contacta a Nuestro Equipo
             </Button>
           </div>

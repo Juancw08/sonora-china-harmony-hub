@@ -154,9 +154,14 @@ export const Contact = () => {
                   />
                 </div>
                 
-                <Button variant="hero" size="lg" className="w-full">
+                <Button 
+                  variant="hero" 
+                  size="lg" 
+                  className="w-full"
+                  onClick={() => window.open('https://wa.me/526621234567?text=Hola, me gustaría contactar con la Asociación China en Sonora', '_blank')}
+                >
                   <Send className="mr-2 h-5 w-5" />
-                  Enviar Mensaje
+                  Contactar por WhatsApp
                 </Button>
                 
                 <p className="text-xs text-muted-foreground text-center">
@@ -177,10 +182,18 @@ export const Contact = () => {
             y promueve el crecimiento conjunto entre México y China.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="hero" size="lg">
+            <Button 
+              variant="hero" 
+              size="lg"
+              onClick={() => window.open('https://wa.me/526621234567?text=Hola, me interesa solicitar una membresía en la Asociación China en Sonora', '_blank')}
+            >
               Solicitar Membresía
             </Button>
-            <Button variant="outline" size="lg">
+            <Button 
+              variant="outline" 
+              size="lg"
+              onClick={() => window.open('https://wa.me/526621234567?text=Hola, me gustaría conocer más sobre la Asociación China en Sonora', '_blank')}
+            >
               Conocer Más
             </Button>
           </div>

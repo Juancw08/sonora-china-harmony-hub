@@ -19,9 +19,11 @@ export const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-gradient-to-br from-primary to-terracotta rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-lg">中</span>
-            </div>
+            <img 
+              src="/lovable-uploads/6674a5b0-16d8-481e-8350-7c1ff1a587de.png" 
+              alt="Asociación China en Sonora"
+              className="w-12 h-12 object-contain"
+            />
             <div className="hidden sm:block">
               <h1 className="font-bold text-foreground text-lg">
                 Asociación China
@@ -47,7 +49,11 @@ export const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Button variant="hero" size="sm">
+            <Button 
+              variant="hero" 
+              size="sm"
+              onClick={() => window.open('https://wa.me/526621234567?text=Hola, me interesa unirme a la Asociación China en Sonora', '_blank')}
+            >
               Únete Ahora
             </Button>
           </div>
@@ -80,7 +86,12 @@ export const Header = () => {
                 </a>
               ))}
               <div className="px-4 pt-2">
-                <Button variant="hero" size="sm" className="w-full">
+                <Button 
+                  variant="hero" 
+                  size="sm" 
+                  className="w-full"
+                  onClick={() => window.open('https://wa.me/526621234567?text=Hola, me interesa unirme a la Asociación China en Sonora', '_blank')}
+                >
                   Únete Ahora
                 </Button>
               </div>
