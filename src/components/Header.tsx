@@ -29,7 +29,7 @@ export const Header = () => {
                 Asociación China
               </h1>
               <p className="text-xs text-muted-foreground -mt-1">
-                de Sonora
+                en Sonora
               </p>
             </div>
           </div>
@@ -48,7 +48,7 @@ export const Header = () => {
           </nav>
 
           {/* CTA Button */}
-          <div className="hidden md:block">
+          {/* <div className="hidden md:block">
             <Button 
               variant="hero" 
               size="sm"
@@ -56,7 +56,7 @@ export const Header = () => {
             >
               Únete Ahora
             </Button>
-          </div>
+          </div> */}
 
           {/* Mobile Menu Button */}
           <button
@@ -85,7 +85,7 @@ export const Header = () => {
                   {item.name}
                 </a>
               ))}
-              <div className="px-4 pt-2">
+              {/* <div className="px-4 pt-2">
                 <Button 
                   variant="hero" 
                   size="sm" 
@@ -94,7 +94,7 @@ export const Header = () => {
                 >
                   Únete Ahora
                 </Button>
-              </div>
+              </div> */}
             </nav>
           </div>
         )}

@@ -25,7 +25,7 @@ export const Hero = () => {
         
         <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
           Asociación China
-          <span className="block text-gold">de Sonora</span>
+          <span className="block text-gold">en Sonora</span>
         </h1>
         
         <p className="text-xl md:text-2xl mb-8 leading-relaxed opacity-95">
@@ -36,7 +36,7 @@ export const Hero = () => {
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button 
+          {/* <Button 
             variant="hero" 
             size="lg" 
             className="text-lg px-8 py-3"
@@ -44,12 +44,17 @@ export const Hero = () => {
           >
             <Users className="mr-2 h-5 w-5" />
             Únete a Nosotros
-          </Button>
+          </Button> */}
           <Button 
             variant="golden" 
             size="lg" 
-            className="text-lg px-8 py-3"
-            onClick={() => window.open('https://wa.me/526621234567?text=Hola, me gustaría conocer más sobre los eventos de la asociación', '_blank')}
+            className="text-lg px-8 py-3 mx-auto"
+            onClick={() => {
+              const eventosSection = document.getElementById('eventos');
+              if (eventosSection) {
+                eventosSection.scrollIntoView({ behavior: 'smooth' });
+              }
+            }}
           >
             Conoce Nuestros Eventos
           </Button>

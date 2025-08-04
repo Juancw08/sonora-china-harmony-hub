@@ -2,45 +2,39 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Calendar, MapPin, Clock, Users2 } from "lucide-react";
-import communityEvents from "@/assets/community-events.jpg";
+import communityEvents from "/lovable-uploads/91f75aee-868c-45d8-935e-573702116f5c.png";
 
 export const Events = () => {
   const upcomingEvents = [
     {
-      title: "Festival de la Luna",
-      date: "15 de Septiembre, 2024",
-      time: "18:00 - 22:00",
-      location: "Centro Cultural Sonora",
-      attendees: "200+ esperados",
-      description: "Celebración tradicional china con música, danza del dragón y gastronomía típica.",
+      title: "La Huella China en Sonora",
+      date: "25 de Agosto, 2025",
+      time: "TBD",
+      location: "Biblioteca de la Universidad de Sonora",
+      description: "Acompáñanos en una exposición cultural y artistica sobre la diaspora china en Sonora.",
       status: "Próximo",
       featured: true
     },
     {
-      title: "Intercambio Gastronómico",
-      date: "22 de Septiembre, 2024", 
-      time: "16:00 - 20:00",
-      location: "Plaza Zaragoza",
-      attendees: "150+ esperados",
-      description: "Degustación de platillos chinos y mexicanos preparados por chefs locales.",
-      status: "Próximo"
-    },
-    {
-      title: "Taller de Caligrafía China",
-      date: "29 de Septiembre, 2024",
-      time: "10:00 - 14:00", 
-      location: "Biblioteca Municipal",
-      attendees: "50+ esperados",
+      title: "Cursos del idioma chino",
+      date: "TBD",
+      time: "TBD", 
+      location: "Oficinas de la Asociacion",
+      attendees: "20+ esperados",
       description: "Aprende el arte milenario de la caligrafía china con maestros certificados.",
-      status: "Inscripciones Abiertas"
-    }
+      status: "Inscripciones Abiertas proximamente"
+    },
+
   ];
 
   const pastEvents = [
-    "Año Nuevo Chino 2024",
-    "Conferencia Negocios México-China",
-    "Festival del Té y la Cultura",
-    "Exposición de Arte Contemporáneo"
+    {
+      title: "Visita al Consulado General de China en Tijuana",
+      url: "http://tijuana.china-consulate.gov.cn/zxhd/202507/t20250703_11664116.htm"
+    },
+    {
+      title: "Cena de Gala - Año Nuevo Chino 2024",
+    }
   ];
 
   return (
@@ -54,8 +48,7 @@ export const Events = () => {
             Próximos Eventos
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Únete a nuestras celebraciones y actividades que fortalecen los lazos 
-            entre nuestras comunidades y promueven el intercambio cultural.
+            Únete a nuestras celebraciones y actividades
           </p>
         </div>
 
@@ -101,14 +94,16 @@ export const Events = () => {
                       <MapPin className="h-4 w-4 text-gold" />
                       <span>{upcomingEvents[0].location}</span>
                     </div>
-                    <div className="flex items-center gap-3 text-sm">
-                      <Users2 className="h-4 w-4 text-primary" />
-                      <span>{upcomingEvents[0].attendees}</span>
-                    </div>
+                    {upcomingEvents[0].attendees && (
+                      <div className="flex items-center gap-3 text-sm">
+                        <Users2 className="h-4 w-4 text-primary" />
+                        <span>{upcomingEvents[0].attendees}</span>
+                      </div>
+                    )}
                   </div>
-                  <Button variant="hero" size="lg">
+                  {/* <Button variant="hero" size="lg">
                     Registrarse Ahora
-                  </Button>
+                  </Button> */}
                 </CardContent>
               </div>
             </div>
@@ -146,10 +141,16 @@ export const Events = () => {
                     <MapPin className="h-4 w-4 text-gold" />
                     <span>{event.location}</span>
                   </div>
+                  {event.attendees && (
+                    <div className="flex items-center gap-2 text-sm">
+                      <Users2 className="h-4 w-4 text-primary" />
+                      <span>{event.attendees}</span>
+                    </div>
+                  )}
                 </div>
-                <Button variant="warm" size="sm" className="w-full">
+                {/* <Button variant="warm" size="sm" className="w-full">
                   Ver Detalles
-                </Button>
+                </Button> */}
               </CardContent>
             </Card>
           ))}
@@ -163,7 +164,12 @@ export const Events = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {pastEvents.map((event, index) => (
               <div key={index} className="text-center p-4 bg-background rounded-lg">
-                <span className="text-sm text-muted-foreground">{event}</span>
+                <a 
+                  href={event.url} 
+                  className="text-sm text-primary hover:text-primary/80 transition-colors"
+                >
+                  {event.title}
+                </a>
               </div>
             ))}
           </div>

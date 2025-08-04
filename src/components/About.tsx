@@ -74,31 +74,31 @@ export const About = () => {
                 fusionen de manera armoniosa, generando oportunidades de crecimiento 
                 para toda nuestra comunidad.
               </p>
-              <div className="space-y-4">
-                <div className="flex items-center gap-3">
-                  <div className="w-2 h-2 bg-primary rounded-full"></div>
-                  <span className="text-foreground">Eventos culturales mensuales</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <div className="w-2 h-2 bg-terracotta rounded-full"></div>
-                  <span className="text-foreground">Programas de intercambio</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <div className="w-2 h-2 bg-gold rounded-full"></div>
-                  <span className="text-foreground">Apoyo empresarial y comercial</span>
-                </div>
+              </div>
+            <div className="space-y-4">
+              <div className="flex items-center gap-3">
+                <div className="w-2 h-2 bg-primary rounded-full"></div>
+                <span className="text-foreground">Eventos culturales</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <div className="w-2 h-2 bg-terracotta rounded-full"></div>
+                <span className="text-foreground">Oportunidades de intercambio</span>
+              </div>
+              <div className="flex items-center gap-3"> 
+                <div className="w-2 h-2 bg-gold rounded-full"></div>
+                <span className="text-foreground">Teje redes de apoyo comunitario</span>
               </div>
             </div>
-            <div className="relative">
+            {/* <div className="relative">
               <div className="bg-gradient-to-br from-gold-light to-secondary rounded-2xl p-8 text-center">
-                <div className="text-4xl font-bold text-primary mb-2">500+</div>
+                <div className="text-4xl font-bold text-primary mb-2">10+</div>
                 <div className="text-muted-foreground mb-4">Miembros Activos</div>
                 <div className="text-2xl font-bold text-terracotta mb-2">50+</div>
                 <div className="text-muted-foreground mb-4">Eventos Anuales</div>
                 <div className="text-2xl font-bold text-gold mb-2">15</div>
                 <div className="text-muted-foreground">Años de Historia</div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
