@@ -164,12 +164,18 @@ export const Events = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {pastEvents.map((event, index) => (
               <div key={index} className="text-center p-4 bg-background rounded-lg">
-                <a 
-                  href={event.url} 
-                  className="text-sm text-primary hover:text-primary/80 transition-colors"
-                >
-                  {event.title}
-                </a>
+                {event.url ? (
+                  <a 
+                    href={event.url} 
+                    className="text-sm text-primary hover:text-primary/80 transition-colors"
+                  >
+                    {event.title}
+                  </a>
+                ) : (
+                  <span className="text-sm text-muted-foreground">
+                    {event.title}
+                  </span>
+                )}
               </div>
             ))}
           </div>
