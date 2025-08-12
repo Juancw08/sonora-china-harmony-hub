@@ -27,9 +27,9 @@ export const Membership = () => {
               <p className="text-muted-foreground mb-6">
                 Estamos trabajando en un programa de membresías exclusivo que ofrecerá beneficios únicos para nuestra comunidad.
               </p>
-              <Button variant="outline" className="w-48 mx-auto">
+              {/* <Button variant="outline" className="w-48 mx-auto">
                 Mantente Informado
-              </Button>
+              </Button> */}
             </CardContent>
           </Card>
         </div>
