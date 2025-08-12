@@ -1,4 +1,4 @@
-import { Heart, Mail, Phone, MapPin } from "lucide-react";
+import { Heart, Mail, MapPin } from "lucide-react";
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -88,36 +88,18 @@ export const Footer = () => {
         <div className="border-t border-background/20 mt-8 pt-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
             <div className="flex items-center gap-3">
-              <MapPin className="h-5 w-5 text-primary flex-shrink-0" />
+              <Mail className="h-5 w-5 text-primary flex-shrink-0" />
               <div className="text-sm text-background/80">
-                <p>Av. Revolución 1234, Col. Centro</p>
-                <p>Hermosillo, Sonora CP 83000</p>
-              </div>
-            </div>
-            <div className="flex items-center gap-3">
-              <Phone className="h-5 w-5 text-terracotta flex-shrink-0" />
-              <div className="text-sm text-background/80">
-                <p>+52 (662) 123-4567</p>
-                <p>+52 (662) 123-4568</p>
-              </div>
-            </div>
-            <div className="flex items-center gap-3">
-              <Mail className="h-5 w-5 text-gold flex-shrink-0" />
-              <div className="text-sm text-background/80">
-                <p>info@asociacionchinosonora.org</p>
-                <p>eventos@asociacionchinosonora.org</p>
+                <p>asociacionchinasonora@gmail.com</p>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Bottom Bar */}
-        <div className="border-t border-background/20 pt-6 text-center">
+        {/* Copyright */}
+        <div className="border-t border-background/20 pt-4 text-center">
           <p className="text-sm text-background/60">
-            © {currentYear} Asociación China de Sonora. Todos los derechos reservados.
-          </p>
-          <p className="text-xs text-background/50 mt-2">
-            中墨友谊 • Amistad Chino-Mexicana
+            {currentYear} Asociación China de Sonora. Todos los derechos reservados.
           </p>
         </div>
       </div>
