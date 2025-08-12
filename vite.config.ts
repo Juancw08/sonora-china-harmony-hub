@@ -1,17 +1,15 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
-import { componentTagger } from "lovable-tagger";
 
 export default defineConfig({
-  base: "/sonora-china-harmony-hub",
+  base: "/sonora-china-harmony-hub/",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
   },
   plugins: [
-    react(),
-    componentTagger(),
+    react()
   ],
 });
