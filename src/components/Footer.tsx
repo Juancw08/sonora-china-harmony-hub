@@ -86,11 +86,11 @@ export const Footer = () => {
 
         {/* Contact Info */}
         <div className="border-t border-background/20 mt-8 pt-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
-            <div className="flex items-center gap-3">
-              <Mail className="h-5 w-5 text-primary flex-shrink-0" />
-              <div className="text-sm text-background/80">
-                <p>asociacionchinasonora@gmail.com</p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 px-4 sm:px-0">
+            <div className="flex items-start gap-3 p-3 -mx-4 sm:mx-0 sm:p-0 rounded-lg sm:rounded-none bg-background/5 sm:bg-transparent">
+              <Mail className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+              <div className="text-sm text-background/80 break-all">
+                <p className="break-words">asociacionchinasonora@gmail.com</p>
               </div>
             </div>
           </div>

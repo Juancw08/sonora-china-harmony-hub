@@ -20,14 +20,14 @@ export const Contact = () => {
         </div>
 
         <div className="max-w-4xl mx-auto">
-          <Card className="p-8 text-center">
-            <CardContent>
-              <div className="flex flex-col items-center gap-4">
-                <Mail className="h-12 w-12 text-primary" />
-                <div className="text-2xl font-bold text-muted-foreground">
+          <Card className="p-4 sm:p-8 text-center">
+            <CardContent className="p-4 sm:p-6">
+              <div className="flex flex-col items-center gap-3 sm:gap-4">
+                <Mail className="h-10 w-10 sm:h-12 sm:w-12 text-primary" />
+                <div className="text-lg sm:text-2xl font-bold text-muted-foreground break-words w-full px-2">
                   asociacionchinasonora@gmail.com
                 </div>
-                <p className="text-muted-foreground mt-4">
+                <p className="text-muted-foreground mt-2 sm:mt-4 text-sm sm:text-base">
                   Estaremos encantados de atenderte.
                 </p>
               </div>
